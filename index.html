@@ -207,6 +207,29 @@ console.log(pet.max_weight);</code></pre>
 ]
   </code></pre>
 </section>
+
+<section class="card">
+  <h2>An API key can change a failed request into a successful one</h2>
+
+  <p>
+    Today I learned that some APIs require an API key before they will answer.
+    My request first returned a 400 status code because the key was missing, but adding the key in the request header changed the response to 200 OK.
+  </p>
+
+  <pre><code>X-Api-Key: {{api-key}}</code></pre>
+</section>
+
+<section class="card">
+  <h2>Changing the endpoint changes the data I get back</h2>
+
+  <p>
+    I duplicated my cat request and changed the endpoint from /v1/cats to /v1/dogs.
+    The API key setup stayed the same, but the response changed because I was asking the API for a different kind of data.
+  </p>
+
+  <pre><code>/v1/cats
+/v1/dogs</code></pre>
+</section>
     </main>
     
 </body>
