@@ -162,6 +162,51 @@ console.log(pet.max_weight);</code></pre>
 ]
   </code></pre>
 </section>
+
+<section class="card">
+  <h2>Same API key, different endpoint</h2>
+
+  <img
+    src="images/postman-beagle.png"
+    alt="Postman showing a successful API Ninjas request for a beagle using a hidden API key variable"
+  >
+
+  <p>
+    What I changed: I changed the endpoint from the cats API to the dogs API.
+    What stayed the same: I used the same API key setup in the request header.
+  </p>
+
+  <pre><code>
+[
+    {
+        "image_link": "https://api-ninjas.com/images/dogs/beagle.jpg",
+        "good_with_children": 5,
+        "good_with_other_dogs": 5,
+        "shedding": 3,
+        "grooming": 2,
+        "drooling": 1,
+        "coat_length": 1,
+        "good_with_strangers": 3,
+        "playfulness": 4,
+        "protectiveness": 2,
+        "trainability": 3,
+        "energy": 4,
+        "barking": 4,
+        "min_life_expectancy": 10.0,
+        "max_life_expectancy": 15.0,
+        "max_height_male": 16.0,
+        "max_height_female": 15.0,
+        "max_weight_male": 20.0,
+        "max_weight_female": 30.0,
+        "min_height_male": 14.0,
+        "min_height_female": 13.0,
+        "min_weight_male": 15.0,
+        "min_weight_female": 20.0,
+        "name": "Beagle"
+    }
+]
+  </code></pre>
+</section>
     </main>
     
 </body>
