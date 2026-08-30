@@ -11,9 +11,39 @@
 </head>
 <body>
     <main class="container">
-        <h1>How to Call the Dog CEO API</h1>
-        <a href="day-3.html">Day 3</a>
+      <header class="magazine-hero">
+        <p class="magazine-kicker">API / 001 · CODEX LEVEL 2A</p>
+
+      <h1 class="magazine-title">The Request and the Response</h1>
+
+      <p class="magazine-deck">
+       How a URL becomes data, and how JavaScript turns that data into something useful.
+      </p>
+
+      <div class="magazine-meta">
+        <span>Matthew Wainwright</span>
+        <span>August 2026</span>
+       </div>
+      </header>  
+
+<section class="section-intro">
+  <p class="section-number">01</p>
+
+  <div>
+    <p class="section-label">THE REQUEST</p>
+    <h2>Start with the URL</h2>
+    <p>
+      Every API request begins with an address. Change the endpoint,
+      and you change the data you ask for.
+    </p>
+  </div>
+</section>
+<a class="article-link" href="day-3.html">
+  <span>INTERACTIVE DEMO</span>
+  <strong>DAY 3</strong>
+</a>
         <section class="card">
+          <p class="figure-label">FIG. 01 · FIRST REQUEST</p>
   <h2>Step 1 — The URL is the request</h2>
 
   <img
@@ -25,6 +55,9 @@
     src="images/pretty-json.png"
     alt="The same response laid out on separate lines by the browser's JSON viewer"
   >
+ <p class="figure-caption">
+  Raw and pretty JSON from the Dog CEO API. Same response, different presentation.
+</p> 
 
   <p>
     What I did: I entered the Dog CEO API URL in my browser.
@@ -42,7 +75,8 @@
   </p>
 </section>
 
-<section class="card">
+<section class="card note-card">
+  <p class="note-label">CONCEPT NOTE</p>
   <h2>Dot notation reads one property</h2>
 
   <p>
@@ -58,12 +92,16 @@ console.log(pet.max_weight);</code></pre>
 </section>
 
 <section class="card">
+  <p class="figure-label">FIG. 02 · RESPONSE SHAPE</p>
   <h2>A menu that arrived already laid out</h2>
 
   <img
     src="images/postman-coffee-menu.png"
     alt="Postman showing a GET to the coffee shop menu address with a 200 status and a response body that is already indented"
   >
+  <p class="figure-caption">
+  The coffee menu response arrived already formatted as readable JSON.
+</p>
 
   <p>
     What I did: I sent a GET request to the coffee shop menu API in Postman.
@@ -165,6 +203,7 @@ console.log(pet.max_weight);</code></pre>
 </section>
 
 <section class="card">
+  <p class="figure-label">FIG. 03 · SAME KEY, NEW ENDPOINT</p>
   <h2>Same API key, different endpoint</h2>
 
   <img
@@ -209,7 +248,8 @@ console.log(pet.max_weight);</code></pre>
   </code></pre>
 </section>
 
-<section class="card">
+<section class="card note-card">
+  <p class="note-label">CONCEPT NOTE</p>
   <h2>An API key can change a failed request into a successful one</h2>
 
   <p>
@@ -221,6 +261,7 @@ console.log(pet.max_weight);</code></pre>
 </section>
 
 <section class="card">
+<p class="figure-label">FIG. 04 · ENDPOINT CHANGE</p>  
   <h2>Changing the endpoint changes the data I get back</h2>
 
   <p>
@@ -235,6 +276,7 @@ console.log(pet.max_weight);</code></pre>
   <div class="flip-card-inner">
 
     <div class="flip-card-front">
+      <p class="flip-label">INTERACTIVE EXPLAINER</p>
       <h2>How the Day 3 Function Works</h2>
       <p>What happens when you press the button?</p>
     </div>
@@ -256,19 +298,26 @@ function describe(pet) {
 
   </div>
 </section>
-<section class="card">
+<section class="reflection-note">
+  <p class="reflection-label">FIELD NOTE</p>
   <h2>What I Learned About Missing Arguments</h2>
   <p>
   I learned that if a function expects an argument and I leave it out, the parameter can become undefined. That can either print the word undefined or cause an error if the code tries to use a property from something that is not there.
 </p>
 </section>
-<section class="card">
+<section class="reflection-note">
+  <p class="reflection-label">FIELD NOTE</p>
   <h2>What I Learned About Button Listeners</h2>
 
   <p>
     I learned that a button listener needs a function to wait for the click. Using an anonymous function lets me wait for the click and then call showPet with the argument I want, like pets[0].
   </p>
 </section>
+
+<footer class="article-footer">
+  <p>END OF PART 3</p>
+  <strong>REQUEST → RESPONSE → JAVASCRIPT</strong>
+</footer>
     </main>
     
 </body>
