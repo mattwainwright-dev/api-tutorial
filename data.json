@@ -11,7 +11,11 @@
     "origin": "Thailand",
     "length": "15 to 20 inches",
     "playfulness": 5,
-    "max_weight": 12
+    "max_weight": 12,
+    "ratings": {
+      "playfulness": 5,
+      "shedding": 3
+    }
   },
   {
     "name": "Maine Coon",
