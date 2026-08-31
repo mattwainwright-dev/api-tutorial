@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+<link rel="stylesheet" href="css/container.css">
+<link rel="stylesheet" href="css/card.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <p>INTERACTIVE DEMO · DAY 4</p>
+
+    <h1>Return Values</h1>
+
+    <p>
+      A function can build a value, return it, and let another part of the
+      program decide where that value goes.
+    </p>
+
+    <a href="index.html">Back to the tutorial</a>
+
+    <button id="summarize-button" type="button">
+      Summarize a cat
+    </button>
+
+    <section class="card">
+      <p id="output"></p>
+    </section>
+
+    <section class="card">
+        <h2>What I learned About Return Values</h2>
+        <p>
+          I learned that console.log prints a value for me to see, but return sends
+          the value back to the code that called the function. That return value can
+          then be stores in a variable or placed on the page.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>What I Learned About Undefined</h2>
+        <p>
+          When summarize printed the sentence instead of returning it, the sentence
+          appeared in the console but the page received undefined. Changing the 
+          function back to return sent the sentence to output.textContent correctly.
+        </p>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="day-4.js"></script>
+</body>
