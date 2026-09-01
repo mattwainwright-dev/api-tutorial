@@ -24,11 +24,39 @@
   <button id="report-button" type="button">
     Show every cat
   </button>
+  <button id="fresh-button" type="button">
+    Fresh cats
+  </button>
 
   <section class="result-panel">
     <p class="result-label">REPORT</p>
     <pre id="report"></pre>
   </section>
+  <section class="result-panel">
+    <p class="result-label">LIVE API DATA</p>
+    <pre id="fresh"></pre>
+  </section>
+
+  <section id="card-list"></section>
+
+  <article class="card">
+  <h3>What I Learned About forEach and map</h3>
+  <p>
+    I learned that forEach runs a function once for every item in an array,
+    but it does not collect the return values. map also runs a function for
+    every item, but it collects each return value into a new array.
+  </p>
+</article>
+
+<article class="card">
+  <h3>What I Learned About Callbacks</h3>
+  <p>
+    I learned that a callback is a function passed to something else to run
+    when it is needed. I used callbacks with forEach, map, addEventListener,
+    and fetch to process records, respond to clicks, and work with data that
+    arrives later.
+  </p>
+</article>
 </main>
 
 <script src="data.js"></script>

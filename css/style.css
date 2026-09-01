@@ -340,7 +340,8 @@ pre code {
 #describe-button,
 #describe-second-button,
 #summarize-button,
-#report-button {
+#report-button,
+#fresh-button {
   background: black;
   color: white;
   border: 1px solid black;
@@ -352,7 +353,8 @@ pre code {
 #describe-button:hover,
 #describe-second-button:hover,
 #summarize-button:hover,
-#report-button:hover {
+#report-button:hover,
+#fresh-button:hover {
   background: white;
   color: black;
 }
