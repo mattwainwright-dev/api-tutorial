@@ -11,7 +11,7 @@ button.addEventListener("click", function () {
   output.textContent = summarize(pets[count]);
   count = count + 1;
 
-  if (count === pets.lenght) {
+  if (count === pets.length) {
     count = 0;
   }
 });
